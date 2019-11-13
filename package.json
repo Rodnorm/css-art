@@ -19,6 +19,7 @@
   "eslintConfig": {
     "extends": "react-app"
   },
+  "homepage": "https://rodnorm.github.io/css-art/",
   "browserslist": {
     "production": [
       ">0.2%",
