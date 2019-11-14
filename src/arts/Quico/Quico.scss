@@ -1,0 +1,53 @@
+.quico-holder {
+    background-color: #00043b;
+    position: relative;
+    min-height: 600px;
+
+    .quico {
+
+        position: absolute;
+        height: 119px;
+        margin: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 200px;
+        background-color: #013272;
+        border: 39px solid transparent;
+        border-left-width: 0;
+        border-radius: 229px 300px 200px 300px;
+        border-right-width: 0;
+        transform: rotate(-583deg) scaleX(-1);
+        box-shadow: 27px -22px yellow, -27px 22px red;
+        background-repeat: no-repeat;
+
+        &:before {
+            content: '';
+            height: 51px;
+            width: 256px;
+            position: absolute;
+            transform: rotate(137deg);
+            bottom: 40px;
+            right: -22px;
+            background-color: #ffb743;
+            border-radius: 200px 200px 0px 0px;
+            background-repeat: no-repeat;
+            background-image: radial-gradient(circle at 50%, transparent 64%, #000d33 69%, transparent 76%);
+        }
+
+        &:after {
+            content: '';
+            width: 118px;
+            border: 1px solid transparent;
+            height: 345px;
+            position: absolute;
+            transform: rotate(47deg);
+            bottom: -69px;
+            left: -1px;
+            background-color: #030f3a;
+            border-radius: 0 130px 130px 0;
+            box-shadow: 241px 130px #030f3a, 227px 227px #030f3a, 240px 0px #030f3a, 229px 185px #030f3a, 229px -185px #030f3a, 229px 127px red;
+        }
+    }
+}
