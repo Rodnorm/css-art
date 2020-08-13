@@ -1,0 +1,4 @@
+{
+    "prettier.singleQuote": true,
+    "terminal.explorerKind": "external"
+}

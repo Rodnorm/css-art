@@ -7,9 +7,9 @@ import Eyes from './arts/Eyes/Eyes';
 function App() {
   return (
     <div className="App">
+      <Eyes />
       <Keyboard />
       <Quico />
-      <Eyes />
     </div>
   );
 }

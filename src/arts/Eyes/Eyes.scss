@@ -1,29 +1,20 @@
 .eyes-holder {
   background-color: #d3a85b;
   position: relative;
-  min-height: 100px;
-  padding: 4rem;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  top: 0;
+  min-height: 400px;
+  // padding: 4rem;
 
   .eyes {
-    left: 0;
-    bottom: 0;
-    right: 0;
-    top: 0;
-    /* border: 1px solid black; */
+    position: absolute;
     margin: auto;
-    min-height: 63px;
+    max-height: 63px;
     box-shadow: 10px 10px 5px 0px #dc8e3e, 16px -4px 14px 0px #dc8e3e;
     border-radius: 100% 0px;
     width: 300px;
     transform: skew(-5deg, 10deg) rotate(355deg);
     background-color: #ffd6d6;
     &:after {
-      content: "";
-      /* border: 1px solid black; */
+      content: '';
       height: 24px;
       width: 24px;
       position: absolute;
@@ -40,16 +31,14 @@
         0px 0px 1px 30px #be7c39;
     }
     &:before {
-      content: "";
+      content: '';
       position: absolute;
-      /* border: 1px solid white; */
       left: 11px;
       bottom: 0;
       right: 0;
       top: -4px;
       transform: skew(-5deg, 0deg) rotate(373deg);
       height: 88px;
-      /* margin-top: -18px; */
       background-color: #ffd6d6;
       border-radius: 72% 1px;
       width: 151px;

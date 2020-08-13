@@ -1,54 +1,56 @@
-@import '../../variables.scss';
+@import '../../shared/variables.scss';
+
 .quico-holder {
-    background-color: $background-color;
-    position: relative;
-    min-height: 600px;
+  background-color: $background-color;
+  position: relative;
+  min-height: 600px;
 
-    .quico {
+  .quico {
+    position: absolute;
+    height: 119px;
+    margin: auto;
+    width: 200px;
+    background-color: #013272;
+    border: 39px solid transparent;
+    border-left-width: 0;
+    border-radius: 229px 300px 200px 300px;
+    border-right-width: 0;
+    transform: rotate(-583deg) scaleX(-1);
+    box-shadow: 27px -22px yellow, -27px 22px red, 63px 67px 0px -78px red;
+    background-repeat: no-repeat;
 
-        position: absolute;
-        height: 119px;
-        margin: auto;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        width: 200px;
-        background-color: #013272;
-        border: 39px solid transparent;
-        border-left-width: 0;
-        border-radius: 229px 300px 200px 300px;
-        border-right-width: 0;
-        transform: rotate(-583deg) scaleX(-1);
-        box-shadow: 27px -22px yellow, -27px 22px red;
-        background-repeat: no-repeat;
-
-        &:before {
-            content: '';
-            height: 51px;
-            width: 256px;
-            position: absolute;
-            transform: rotate(137deg);
-            bottom: 40px;
-            right: -22px;
-            background-color: #ffb743;
-            border-radius: 200px 200px 0px 0px;
-            background-repeat: no-repeat;
-            background-image: radial-gradient(circle at 50%, transparent 64%, #000d33 69%, transparent 76%);
-        }
-
-        &:after {
-            content: '';
-            width: 118px;
-            border: 1px solid transparent;
-            height: 345px;
-            position: absolute;
-            transform: rotate(47deg);
-            bottom: -69px;
-            left: -1px;
-            background-color: $background-color;
-            border-radius: 0 130px 130px 0;
-            box-shadow: 241px 130px $background-color, 227px 227px $background-color, 240px 0px $background-color, 229px 185px $background-color, 229px -185px $background-color, 229px 127px red;
-        }
+    &:before {
+      content: '';
+      height: 51px;
+      width: 256px;
+      position: absolute;
+      transform: rotate(137deg);
+      bottom: 40px;
+      right: -22px;
+      // transform: rotate(-583deg);
+      background-color: #ffb743;
+      border-radius: 200px 200px 0px 0px;
+      background-repeat: no-repeat;
+      background-image: radial-gradient(
+        circle at 50%,
+        transparent 64%,
+        #000d33 69%,
+        transparent 76%
+      );
     }
+
+    &:after {
+      content: '';
+      width: 118px;
+      border: 1px solid transparent;
+      height: 345px;
+      position: absolute;
+      transform: rotate(47deg);
+      bottom: -69px;
+      left: -1px;
+      // transform: rotate(-583deg) scaleX(-1);
+      background-color: $background-color;
+      border-radius: 0 130px 130px 0;
+    }
+  }
 }
